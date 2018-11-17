@@ -21,7 +21,7 @@
   input {
     border: none;
     padding: $size-main*1.5 $size-main;
-    width: $size-width/6*5+%;
+    width: $size-width/6*5+'%';
     height: $size-main*2;
     font-family: $font-second;
     font-style: italic;
@@ -43,7 +43,7 @@
 
   button {
     font-size: $size-main*1.6;
-    width: $size-width+%;
+    width: $size-width+'%';
     margin-top: $size-zero;
     padding: $size-main*1.4;
   }
