@@ -1,0 +1,54 @@
+$size-zero: 0px;
+$size-main: 10px;
+$size-width: 100;
+$color-dark:black;
+$color-gray:gray;
+$color-blue: #4f71b5;
+$color-yellow: #ffd800;
+$color-orange: #00ff21;
+$position: center;
+$font-main:Oswald;
+$font-second:sans-serif;
+body{
+  padding: $size-zero;
+  margin: $size-zero;
+  color: $color-dark;
+}
+.grid{
+  display: grid;
+}
+header.grid{
+  min-height: $size-width+vh;
+  background-size: cover;
+  background-image: url('../img/header.jpg');
+  position: relative;
+  background-position: $position;
+  align-content: $position;
+  &::before{
+    content: "";
+    background-color: $color-gray;
+    top: $size-zero;
+    bottom:$size-zero;
+    left:$size-zero;
+    right:$size-zero;
+    opacity: 0.65;
+    position: absolute;
+  }
+  .header-container{
+    z-index: 1;
+    color: lighten($color-dark, 100%);
+    text-align: $position;
+    padding: $size-main*6 $size-main*2;
+    h1{
+      font-size: $size-main*6;
+      font-family: $font-main;
+      text-transform: uppercase;
+      margin: $size-main*2 $size-zero;
+      line-height: 1.5;
+    }
+  }
+}
+@import "buttons";
+@import "section-about";
+@import "section-form";
+@import "section-photo";
