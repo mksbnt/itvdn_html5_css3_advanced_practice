@@ -1,0 +1,63 @@
+@media screen and (max-width: 480px) {
+  header.grid .header {
+    &-container h1 {
+      font-size: $size-main*4;
+    }
+
+    &-btns .btn {
+      padding: $size-main $size-main*4;
+      font-size: $size-main*2;
+      margin: $size-main*2 auto;
+    }
+  }
+
+  .about-left {
+    h2 {
+      font-size: $size-main*3;
+    }
+
+    p {
+      display: none;
+    }
+  }
+
+  .about-left {
+    img {
+      width: $size-main/0.5+%;
+    }
+  }
+
+  .section-form {
+    form {
+      div {
+        input {
+          font-size: $size-main*2;
+          text-indent: $size-main;
+        }
+
+        &:last-of-type {
+          .btn {
+            font-size: $size-main*2.5;
+            width: $size-width+%;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    &-img img {
+      width: $size-main*4;
+      height: $size-main*4;
+      margin: 2em 1em;
+    }
+
+    &-text span {
+      font-size: $size-main*4;
+
+      span {
+        font-size: $size-main*3;
+      }
+    }
+  }
+}
