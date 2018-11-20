@@ -252,5 +252,68 @@ header.grid {
 }
 
 @media screen and (max-width: 768px) {
-  
+  header.grid .header {
+    &-container h1{
+      font-size: $size-main*7;
+    }
+    &-btns .btn {
+      padding: $size-main $size-main*8;
+      font-size: $size-main*2.5;
+    }
+  }
+  .photo {
+    &-section {
+      grid-template-columns: 1fr;
+    }
+    &-item:nth {
+      &-child(1) {
+        grid-column: 1;
+      }
+      &-child(4) {
+        grid-column: 1;
+      }
+      &-child(5) {
+        grid-column: 1;
+        grid-row: 5;
+      }
+      &-child(8) {
+        grid-column: 1;
+        grid-row: 8;
+      }
+    }
+  }
+  .blog {
+    &-main {
+      grid-template-columns: 1fr;
+      .btn-blog {
+        grid-column: 1/2;
+      }
+    }
+    &-item:nth {
+      &-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+      }
+      &-child(2) {
+        grid-column: 1;
+        grid-row: 2;
+      }
+      &-child(3) {
+        grid-column: 1;
+        grid-row: 3;
+      }
+      &-child(4) {
+        grid-column: 1;
+        grid-row: 4;
+      }
+      &-child(5) {
+        grid-column: 1;
+        grid-row: 5;
+      }
+      &-child(6) {
+        grid-column: 1;
+        grid-row: 6;
+      }
+    }
+  }
 }
