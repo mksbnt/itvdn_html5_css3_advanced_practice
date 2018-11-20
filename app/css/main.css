@@ -379,6 +379,9 @@ header.grid {
     grid-template-columns: 1fr; }
     .blog-main .btn-blog {
       grid-column: 1/2; }
+  .blog-item-content {
+    height: 40px;
+    font-size: 25px; }
   .blog-item:nth-child(1) {
     grid-column: 1;
     grid-row: 1; }
@@ -396,4 +399,42 @@ header.grid {
     grid-row: 5; }
   .blog-item:nth-child(6) {
     grid-column: 1;
-    grid-row: 6; } }
+    grid-row: 6; }
+  .frame {
+    height: 250px; }
+  .footer-img img {
+    width: 50px;
+    height: 50px;
+    margin: 2em 2em; }
+  .footer-text span {
+    font-size: 60px; }
+    .footer-text span span {
+      font-size: 40px; } }
+
+@media screen and (max-width: 480px) {
+  header.grid .header-container h1 {
+    font-size: 40px; }
+  header.grid .header-btns .btn {
+    padding: 10px 40px;
+    font-size: 20px;
+    margin: 20px auto; }
+  .about-left h2 {
+    font-size: 30px; }
+  .about-left p {
+    display: none; }
+  .about-left img {
+    width: 20px%; }
+  .section-form form div input {
+    font-size: 20px;
+    text-indent: 10px; }
+  .section-form form div:last-of-type .btn {
+    font-size: 25px;
+    width: 100%; }
+  .footer-img img {
+    width: 40px;
+    height: 40px;
+    margin: 2em 1em; }
+  .footer-text span {
+    font-size: 40px; }
+    .footer-text span span {
+      font-size: 30px; } }
