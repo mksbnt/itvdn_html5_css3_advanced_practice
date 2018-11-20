@@ -30,6 +30,10 @@
           font-size: $size-main * 4;
           margin-bottom: $size-main;
         }
+
+        p {
+          text-align: $position;
+        }
       }
 
       &.about-right {

@@ -287,6 +287,8 @@ header.grid {
           text-align: center;
           font-size: 40px;
           margin-bottom: 10px; }
+        .section-about .container > div.about-left p {
+          text-align: center; }
       .section-about .container > div.about-right {
         padding: "3.0303%" "5%"; }
         .section-about .container > div.about-right .img-responsive {
